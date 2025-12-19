@@ -14,8 +14,8 @@ const Navbar = () => {
 
     const observerOptions = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.6,
+      rootMargin: "-20% 0px -70% 0px",
+      threshold: 0,
     };
 
     const observerCallback = (entries) => {
@@ -43,13 +43,18 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleLinkClick = (id) => {
+    setActiveSection(id);
+    setOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <nav className={`${open ? "bg-white" : "bg-white/90"} backdrop-blur-md ${changeColor ? "shadow-sm" : ""}`}>
         <div className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 relative">
           <div className="flex items-center justify-between py-6">
             {/* LOGO */}
-            <a href="#home" className="font-semibold text-2xl text-black/80">
+            <a href="#home" onClick={() => handleLinkClick("home")} className="font-semibold text-2xl text-black/80">
               Denis
             </a>
 
@@ -62,7 +67,8 @@ const Navbar = () => {
                 return (
                   <li key={item}>
                     <a
-                      href={`#${item}`.toLocaleLowerCase()}
+                      href={`#${id}`}
+                      onClick={() => handleLinkClick(id)}
                       className={`relative font-semibold transition-all duration-300
                       after:content-[''] after:absolute after:left-0 after:-bottom-1
                       after:h-0.5 after:bg-black
@@ -78,18 +84,9 @@ const Navbar = () => {
 
             {/* HAMBURGER */}
             <button onClick={() => setOpen(!open)} className="md:hidden flex flex-col gap-1.5 group">
-              <span
-                className={`w-7 h-0.5 bg-black/85 rounded transition-all duration-300
-                ${open ? "rotate-45 translate-y-2" : ""}`}
-              />
-              <span
-                className={`w-7 h-0.5 bg-black/85 rounded transition-all duration-300
-                ${open ? "opacity-0" : ""}`}
-              />
-              <span
-                className={`w-7 h-0.5 bg-black/85 rounded transition-all duration-300
-                ${open ? "-rotate-45 -translate-y-2" : ""}`}
-              />
+              <span className={`w-7 h-0.5 bg-black/85 rounded transition-all duration-300 ${open ? "rotate-45 translate-y-2" : ""}`} />
+              <span className={`w-7 h-0.5 bg-black/85 rounded transition-all duration-300 ${open ? "opacity-0" : ""}`} />
+              <span className={`w-7 h-0.5 bg-black/85 rounded transition-all duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`} />
             </button>
           </div>
 
@@ -98,7 +95,7 @@ const Navbar = () => {
             className={`md:hidden fixed top-full right-0 z-50
             w-1/2 h-screen bg-white backdrop-blur-md flex flex-col items-center pt-12 gap-8
             transition-all duration-500 ease-in-out
-            ${open ? "translate-x-0 shadow-2xl" : "translate-x-full"}`}
+            ${open ? "translate-x-0 shadow-xs" : "translate-x-full"}`}
           >
             {menuBar.map((item) => {
               const id = item.toLowerCase();
@@ -107,7 +104,8 @@ const Navbar = () => {
               return (
                 <li key={item}>
                   <a
-                    href={`#${item}`.toLocaleLowerCase()}
+                    href={`#${id}`}
+                    onClick={() => handleLinkClick(id)}
                     className={`relative font-semibold transition-all duration-300
                       after:content-[''] after:absolute after:left-0 after:-bottom-1
                       after:h-0.5 after:bg-black

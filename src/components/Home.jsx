@@ -2,7 +2,7 @@ import { InstagramLogoIcon, LinkedinLogoIcon, GithubLogoIcon, PaperPlaneTiltIcon
 
 const Home = () => {
   return (
-    <section id="home" className="home py-32 md:py-40 xl:min-h-screen xl:flex xl:items-center xl:justify-center">
+    <section id="home" className="home py-32 md:py-40 xl:min-h-screen xl:flex xl:items-center xl:justify-center overflow-x-hidden">
       <div className="w-full max-w-7xl grid grid-cols-12 items-center gap-8 md:gap-10">
         {/* SOCIAL ICONS */}
         <div className="col-span-2 md:col-span-1 flex justify-start md:justify-center">
@@ -30,7 +30,7 @@ const Home = () => {
             Junior Web Developer
           </div>
 
-          <p className="text-gray-600 max-w-lg leading-relaxed">Junior Web Developer yang tertarik pada frontend dan backend. Fokus membangun website yang responsif dan fungsional.</p>
+          <p className="text-gray-600 text-sm md:text-base pr-2 md:pr-0 max-w-md leading-relaxed">Junior Web Developer yang tertarik pada frontend dan backend. Fokus membangun website yang responsif dan fungsional.</p>
 
           <a href="#contact" className="inline-flex items-center gap-2 px-8 py-4 bg-black/85 rounded-xl text-white hover:bg-black transition">
             Say Hello
