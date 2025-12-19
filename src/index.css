@@ -10,7 +10,7 @@ body {
 
 /* PROFILE IMAGE BLOB */
 .home-img {
-  background: url(./assets/img/profile.png);
+  background: url(/assets/img/profile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
