@@ -28,17 +28,17 @@ const Footer = () => {
         </ul>
         <ul className="flex items-center justify-center gap-6">
           <li>
-            <a href="#" className="text-gray-600 font-semibold hover:text-black/85 transition duration-300">
+            <a href="https://www.instagram.com/denisalipshd/" target="_blank" className="text-gray-600 font-semibold hover:text-black/85 transition duration-300">
               <InstagramLogoIcon size={28} weight="bold" />
             </a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 font-semibold hover:text-black/85 transition duration-300">
+            <a href="https://www.linkedin.com/in/denis-alip-sahidi/" target="_blank" className="text-gray-600 font-semibold hover:text-black/85 transition duration-300">
               <LinkedinLogoIcon size={28} weight="bold" />
             </a>
           </li>
           <li>
-            <a href="#" className="text-gray-600 font-semibold hover:text-black/85 transition duration-300">
+            <a href="https://github.com/denisalipshd" target="_blank" className="text-gray-600 font-semibold hover:text-black/85 transition duration-300">
               <GithubLogoIcon size={28} weight="bold" />
             </a>
           </li>

@@ -7,14 +7,14 @@ const Home = () => {
         {/* SOCIAL ICONS */}
         <div className="col-span-2 md:col-span-1 flex justify-start md:justify-center">
           <div className="flex flex-col gap-5">
-            <a href="">
-              <InstagramLogoIcon size={28} weight="bold" className="text-gray-700 hover:text-black transition duration-300" />
+            <a href="https://www.instagram.com/denisalipshd/" target="_blank" className="text-gray-700 hover:text-black transition duration-300">
+              <InstagramLogoIcon size={28} weight="bold" />
             </a>
-            <a href="">
-              <LinkedinLogoIcon size={28} weight="bold" className="text-gray-700 hover:text-black transition duration-300" />
+            <a href="https://www.linkedin.com/in/denis-alip-sahidi/" target="_blank" className="text-gray-700 hover:text-black transition duration-300">
+              <LinkedinLogoIcon size={28} weight="bold" />
             </a>
-            <a href="">
-              <GithubLogoIcon size={28} weight="bold" className="text-gray-700 hover:text-black transition duration-300" />
+            <a href="https://github.com/denisalipshd" target="_blank" className="text-gray-700 hover:text-black transition duration-300">
+              <GithubLogoIcon size={28} weight="bold" />
             </a>
           </div>
         </div>
