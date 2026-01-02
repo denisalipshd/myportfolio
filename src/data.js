@@ -1,3 +1,54 @@
+export const menuBar = [
+  {
+    id: 1,
+    name: "Home",
+    path: "home",
+  },
+  {
+    id: 2,
+    name: "About",
+    path: "about",
+  },
+  {
+    id: 3,
+    name: "Skills",
+    path: "skills",
+  },
+  {
+    id: 4,
+    name: "Portfolio",
+    path: "portfolio",
+  },
+  {
+    id: 5,
+    name: "Contact",
+    path: "contact",
+  },
+];
+
+export const menuFooter = [
+  {
+    id: 1,
+    name: "Home",
+    path: "home",
+  },
+  {
+    id: 2,
+    name: "About",
+    path: "about",
+  },
+  {
+    id: 3,
+    name: "Portfolio",
+    path: "portfolio",
+  },
+  {
+    id: 4,
+    name: "Contact",
+    path: "contact",
+  },
+];
+
 export const skillsData = {
   frontend: [
     { name: "HTML", level: "Intermediate" },
@@ -38,7 +89,7 @@ export const projects = [
     title: "Coffee Shop Experience",
     description: "Landing page interaktif untuk bisnis kopi yang menonjolkan visual produk dan kemudahan navigasi menu bagi pelanggan.",
     tags: ["HTML", "CSS", "JavaScript", "Swiper JS"],
-    link: "#",
+    link: "https://denisalipshd.github.io/website-coffee/",
   },
   {
     id: 3,
@@ -47,5 +98,21 @@ export const projects = [
     description: "Sistem informasi akademik terpadu untuk pengelolaan profil sekolah, berita, dan pengumuman melalui dashboard admin yang intuitif.",
     tags: ["Laravel", "Filament", "MySQL", "Bootstrap", "JavaScript"],
     link: "#",
+  },
+  {
+    id: 4,
+    image: "./assets/img/website-cek-cuaca.png",
+    title: "Weather Information System",
+    description: "Aplikasi web sederhana untuk menampilkan informasi cuaca dengan menggunakan API dari OpenWeatherMap.",
+    tags: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
+    link: "https://denisalipshd.github.io/website-cuaca/",
+  },
+  {
+    id: 5,
+    image: "./assets/img/lumina-dining.png",
+    title: "Lumina Dining",
+    description: "Website restoran yang menampilkan menu dan informasi tentang restoran, serta fitur untuk memesan makanan dan minuman.",
+    tags: ["React", "Tailwind", "Swiper JS"],
+    link: "https://lumina-dining.vercel.app/",
   },
 ];

@@ -38,7 +38,7 @@ const About = () => {
               baru dan menantang diri saya untuk menyelesaikan masalah kompleks melalui solusi digital yang sederhana namun elegan.
             </p>
 
-            <a href="#contact" className="inline-flex items-center gap-2 px-8 py-4 bg-black/85 text-white rounded-xl hover:bg-black transition">
+            <a href="#" className="inline-flex items-center gap-2 px-8 py-4 bg-black/85 text-white rounded-xl hover:bg-black transition">
               Download CV
               <FilesIcon size={20} weight="bold" />
             </a>

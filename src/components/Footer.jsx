@@ -1,6 +1,5 @@
 import { InstagramLogoIcon, LinkedinLogoIcon, GithubLogoIcon } from "@phosphor-icons/react";
-
-const menuFooter = ["Home", "About", "Portfolio", "Contact"];
+import { menuFooter } from "../data";
 
 const Footer = () => {
   return (
@@ -12,16 +11,16 @@ const Footer = () => {
          gap-6 py-6"
         >
           {menuFooter.map((item) => (
-            <li key={item}>
+            <li key={item.id}>
               <a
-                href={`#${item.toLowerCase()}`}
+                href={`#${item.path}`}
                 className="relative text-gray-600 font-semibold transition-all duration-300
                       after:content-[''] after:absolute after:left-0 after:-bottom-1
                       after:w-0 after:h-0.5 after:bg-black
                       after:transition-all after:duration-300
                       hover:after:w-full hover:text-black"
               >
-                {item}
+                {item.name}
               </a>
             </li>
           ))}
@@ -44,7 +43,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex items-center justify-center pt-16">
-          <p className="text-gray-600 text-sm">© 2025 Denis All Rights Reserved</p>
+          <p className="text-gray-600 text-sm">© 2026 Denis All Rights Reserved</p>
         </div>
       </div>
     </footer>

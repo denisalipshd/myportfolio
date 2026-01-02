@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-
-const menuBar = ["Home", "About", "Skills", "Portfolio", "Contact"];
+import { menuBar } from "../data";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -29,9 +28,9 @@ const Navbar = () => {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     menuBar.forEach((item) => {
-      const section = document.getElementById(item.toLowerCase());
+      const section = document.getElementById(item.path);
       if (section) {
-        observer.observe(section);
+        observer.observe(section);  
       }
     });
 
@@ -61,11 +60,11 @@ const Navbar = () => {
             {/* DESKTOP MENU */}
             <ul className="hidden md:flex items-center gap-6">
               {menuBar.map((item) => {
-                const id = item.toLowerCase();
+                const id = item.path;
                 const isActive = activeSection === id;
 
                 return (
-                  <li key={item}>
+                  <li key={item.id}>
                     <a
                       href={`#${id}`}
                       onClick={() => handleLinkClick(id)}
@@ -75,7 +74,7 @@ const Navbar = () => {
                       after:transition-all after:duration-300
                       ${isActive ? "text-black after:w-full" : "text-black/75 after:w-0 hover:after:w-full hover:text-black"}`}
                     >
-                      {item}
+                      {item.name}
                     </a>
                   </li>
                 );
@@ -98,11 +97,11 @@ const Navbar = () => {
             ${open ? "translate-x-0 shadow-xs" : "translate-x-full"}`}
           >
             {menuBar.map((item) => {
-              const id = item.toLowerCase();
+              const id = item.path;
               const isActive = activeSection === id;
 
               return (
-                <li key={item}>
+                <li key={item.id}>
                   <a
                     href={`#${id}`}
                     onClick={() => handleLinkClick(id)}
@@ -112,7 +111,7 @@ const Navbar = () => {
                       after:transition-all after:duration-300
                       ${isActive ? "text-black after:w-full" : "text-black/75 after:w-0 hover:after:w-full hover:text-black"}`}
                   >
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               );

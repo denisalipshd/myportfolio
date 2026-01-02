@@ -3,7 +3,7 @@ import { projects } from "../data";
 
 const PortfolioCard = ({ image, title, description, tags, link }) => (
   <div className="card bg-white border border-gray-200 shadow-lg rounded-3xl p-6 h-full flex flex-col">
-    <div className="w-full aspect-square overflow-hidden rounded-2xl">
+    <div className="w-full aspect-video overflow-hidden rounded-2xl">
       <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" />
     </div>
 
