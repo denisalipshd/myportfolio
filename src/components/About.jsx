@@ -29,7 +29,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="flex flex-wrap justify-center gap-4">
               <InfoCard icon={<MedalIcon size={28} weight="bold" />} title="Experience" value="5+ Months" />
-              <InfoCard icon={<SuitcaseIcon size={28} weight="bold" />} title="Completed" value="45+ Projects" />
+              <InfoCard icon={<SuitcaseIcon size={28} weight="bold" />} title="Completed" value="10+ Projects" />
               <InfoCard icon={<HeadsetIcon size={28} weight="bold" />} title="Support" value="Online 24/7" />
             </div>
 

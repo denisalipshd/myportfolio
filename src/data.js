@@ -55,8 +55,8 @@ export const skillsData = {
     { name: "CSS", level: "Intermediate" },
     { name: "Bootstrap", level: "Intermediate" },
     { name: "JavaScript", level: "Intermediate" },
-    { name: "Tailwind", level: "Basic" },
-    { name: "React", level: "Basic" },
+    { name: "Tailwind", level: "Intermediate" },
+    { name: "React", level: "Intermediate" },
   ],
   backend: [
     { name: "PHP", level: "Intermediate" },
@@ -69,7 +69,7 @@ export const skillsData = {
     { name: "GitHub", level: "Basic" },
     { name: "Figma", level: "Basic" },
     { name: "VS Code", level: "Intermediate" },
-    { name: "Postman", level: "Basic" },
+    { name: "Postman", level: "Intermediate" },
     { name: "NPM", level: "Basic" },
   ],
 };
@@ -115,4 +115,20 @@ export const projects = [
     tags: ["React", "Tailwind", "Swiper JS"],
     link: "https://lumina-dining.vercel.app/",
   },
+  {
+    id: 6,
+    image: "./assets/img/warung-pojok-pos.png",
+    title: "Warung Pojok Pos",
+    description: "Sistem POS modern yang dibangun dengan Laravel dan Livewire, menampilkan dashboard admin Filament yang dinamis untuk pengelolaan inventaris, menu, serta transaksi penjualan warung.",
+    tags: ["Laravel", "Filament", "Livewire", "MySQL", "Tailwind", "JavaScript"],
+    link: "#",
+  },
+  {
+    id: 7,
+    image: "./assets/img/spp-smart-school-2.png",
+    title: "SPP Smart School",
+    description: "Sistem manajemen pembayaran SPP berbasis web yang dirancang untuk membantu admin sekolah dalam mencatat transaksi, memantau tunggakan, dan mengelola data pembayaran siswa secara terpusat.",
+    tags: ["Laravel", "MySQL", "Tailwind", "JavaScript", 'Jquery', 'Chart.js'],
+    link: "http://sppsmartschool.fwh.is/",
+  }
 ];
